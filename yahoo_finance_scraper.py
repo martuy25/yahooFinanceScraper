@@ -1,4 +1,4 @@
-
+#!bin/pyhton3
 
 import requests
 import sys

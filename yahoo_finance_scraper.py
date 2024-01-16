@@ -15,7 +15,7 @@ class YahooFinanceScrapper:
 		response = requests.get(self.url) #sends a GET request to specified URL
 		if response.status_code == 200: #checks to see if the requests was succesful
 			soup = BeautifulSoup(response.text, 'html.parser') # parse the HTML content of the page
-			self.stock_info['Symbol'] = soup.find('h1').text.strip() #assuming the stock symbol is an H1 tag, modify as necessary
+			self.stock_info['Symbol'] = soup.find('h1').text.strip() #assuming the stock symbol is an H1 tag, can be modified if necessary, you would change this to 'h2' or 'h3' if that was how the website was organized
 			tables = soup.find_all('table')
 			for table in tables:
 				rows = table.find_all('tr')

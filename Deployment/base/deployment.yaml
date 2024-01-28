@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yahoo-deployment
+  namespace: yahoo
+  labels:
+    app: yahoo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yahoo
+  template:
+    metadata:
+      labels:
+        app: yahoo
+    spec:
+      containers:
+      - name: yahoo-container
+        imagePullPolicy: Always
+        image: 172.23.161.55:5000/yahoofinance
+        ports:
+        - containerPort: 80

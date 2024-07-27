@@ -14,5 +14,5 @@ This Python web scraper extracts stock and financial statement data from Yahoo F
 
 # Usage:
 - Clone the repository.
-- Install dependencies (requests and beautifulsoup4).
+- Install dependencies (requests and beautifulsoup4, tabulate).
 - Run the main script, providing the Yahoo Finance URL as a command-line argument.

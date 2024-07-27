@@ -2,11 +2,10 @@
 This Python web scraper extracts stock and financial statement data from Yahoo Finance. It utilizes the BeautifulSoup library for HTML parsing and requests for making HTTP requests. The script is modular, organized into classes, allowing easy extension and customization. Data is printed to the console and saved to a CSV file for further analysis.
 
 # Updates
-- Enhahnced Flexibility:
-- -Case Insensitivity:
-- Improved Data Display
-- Comprehensive Data Extraction
-- Data Persistence 
+- Enhahnced Flexibility: Script now accepts multiple stock ticker symbols directly from the command line, seperated by commas, spaces or both
+- Case Insensitivity: Accepts input tickers in upper or lowercase
+- Improved Data Display: Using the "tabulate" library to display information clearly
+
 # Features:
 
 - Scrapes stock information and financial statement data from Yahoo Finance.
